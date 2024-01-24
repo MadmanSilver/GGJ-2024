@@ -14,6 +14,9 @@ public class LevelManager : MonoBehaviour
         Scene lastScene = SceneManager.GetActiveScene();
         InitLevel(lastScene.buildIndex);
 
+        if (SceneManager.loadedSceneCount <= 1)
+            return;
+
         SceneManager.SetActiveScene(gameObject.scene);
         SceneManager.UnloadSceneAsync(lastScene);
     }

@@ -14,11 +14,6 @@ public class SceneNav : MonoBehaviour
 
     public void LoadScene(int sceneIndex)
     {
-        StartCoroutine(LoadAsync(sceneIndex));
-    }
-
-    private void LoadAsync(int sceneIndex)
-    {
         SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
     }
 }
