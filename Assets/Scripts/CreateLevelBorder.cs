@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class CreateLevelBorder : MonoBehaviour
 {
+    public float margin = 0.2f;
+
     private Bounds bounds;
     private Transform upperBound, lowerBound, leftBound, rightBound;
     
@@ -16,7 +18,7 @@ public class CreateLevelBorder : MonoBehaviour
         // Create upper boundary.
         upperBound = new GameObject("Upper Boundary", typeof(BoxCollider)).transform;
         upperBound.gameObject.layer = LayerMask.NameToLayer("Camera");
-        upperBound.localScale = new Vector3(bounds.size.x, 1f, 100f);
+        upperBound.localScale = new Vector3(bounds.size.x, margin, 100f);
         upperBound.position = new Vector3(bounds.center.x,
                                             bounds.center.y + bounds.extents.y,
                                             bounds.center.z);
@@ -25,7 +27,7 @@ public class CreateLevelBorder : MonoBehaviour
         // Create lower boundary.
         lowerBound = new GameObject("Lower Boundary", typeof(BoxCollider)).transform;
         lowerBound.gameObject.layer = LayerMask.NameToLayer("Camera");
-        lowerBound.localScale = new Vector3(bounds.size.x, 1f, 100f);
+        lowerBound.localScale = new Vector3(bounds.size.x, margin, 100f);
         lowerBound.position = new Vector3(bounds.center.x,
                                             bounds.center.y - bounds.extents.y,
                                             bounds.center.z);
@@ -34,7 +36,7 @@ public class CreateLevelBorder : MonoBehaviour
         // Create left boundary.
         leftBound = new GameObject("Left Boundary", typeof(BoxCollider)).transform;
         leftBound.gameObject.layer = LayerMask.NameToLayer("Camera");
-        leftBound.localScale = new Vector3(1f, bounds.size.y, 100f);
+        leftBound.localScale = new Vector3(margin, bounds.size.y, 100f);
         leftBound.position = new Vector3(bounds.center.x + bounds.extents.x,
                                             bounds.center.y,
                                             bounds.center.z);
@@ -43,7 +45,7 @@ public class CreateLevelBorder : MonoBehaviour
         // Create right boundary.
         rightBound = new GameObject("Right Boundary", typeof(BoxCollider)).transform;
         rightBound.gameObject.layer = LayerMask.NameToLayer("Camera");
-        rightBound.localScale = new Vector3(1f, bounds.size.y, 100f);
+        rightBound.localScale = new Vector3(margin, bounds.size.y, 100f);
         rightBound.position = new Vector3(bounds.center.x - bounds.extents.x,
                                             bounds.center.y,
                                             bounds.center.z);

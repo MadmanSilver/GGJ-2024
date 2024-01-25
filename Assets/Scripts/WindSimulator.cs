@@ -44,4 +44,9 @@ public class WindSimulator : MonoBehaviour
 
         charCon.Move(Vector2.down * windForce * Time.deltaTime);
     }
+
+    public void Sheltered(bool val)
+    {
+        sheltered = val;
+    }
 }

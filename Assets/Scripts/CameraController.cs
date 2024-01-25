@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
     {
         col = GetComponent<BoxCollider>();
         trans = transform;
-        offset = cam.transform.position;
+        offset = new Vector3(0f, 0f, cam.transform.position.z);
     }
 
     // Update is called once per frame
