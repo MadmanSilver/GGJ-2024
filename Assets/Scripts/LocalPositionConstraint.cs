@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vertical2Horizontal : MonoBehaviour
+public class LocalPositionConstraint : MonoBehaviour
 {
     [SerializeField] private Transform target;
 
