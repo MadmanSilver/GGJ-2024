@@ -37,7 +37,6 @@ public class CameraController : MonoBehaviour
             return;
 
         string otherName = other.gameObject.name.ToLower();
-        Debug.Log($"Trigger Enter: {otherName}");
 
         if (otherName.Contains("upper") || otherName.Contains("lower"))
         {
@@ -54,7 +53,6 @@ public class CameraController : MonoBehaviour
             return;
 
         string otherName = other.gameObject.name.ToLower();
-        Debug.Log($"Trigger Exit: {otherName}");
 
         if (otherName.Contains("upper") || otherName.Contains("lower"))
         {
