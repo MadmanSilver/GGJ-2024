@@ -62,6 +62,7 @@ public class ChickenAI : MonoBehaviour
             if (wanderTimer < wanderCooldown)
                 return;
 
+            wanderTimer = 0f;
             finalDestination = Random.onUnitSphere * wanderDistance + trans.position;
         }
 

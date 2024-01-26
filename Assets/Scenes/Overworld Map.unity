@@ -544,6 +544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Windy Hill
       objectReference: {fileID: 0}
+    - target: {fileID: 6293488633028038077, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: m_text
+      value: Windy Hill
+      objectReference: {fileID: 0}
     - target: {fileID: 6935980591212733567, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -653,6 +658,11 @@ PrefabInstance:
     - target: {fileID: 2534962415638968120, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
       propertyPath: m_Name
+      value: Chicken Farm
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293488633028038077, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: m_text
       value: Chicken Farm
       objectReference: {fileID: 0}
     - target: {fileID: 6935980591212733567, guid: 68a627de9ef5e33479f770f6052d84ac,
@@ -846,6 +856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Funny Bone
       objectReference: {fileID: 0}
+    - target: {fileID: 6293488633028038077, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: m_text
+      value: Cliffside
+      objectReference: {fileID: 0}
     - target: {fileID: 6935980591212733567, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -955,6 +970,11 @@ PrefabInstance:
     - target: {fileID: 2534962415638968120, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
       propertyPath: m_Name
+      value: Home
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293488633028038077, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: m_text
       value: Home
       objectReference: {fileID: 0}
     - target: {fileID: 6935980591212733567, guid: 68a627de9ef5e33479f770f6052d84ac,
