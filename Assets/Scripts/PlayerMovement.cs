@@ -10,13 +10,22 @@ public class PlayerMovement : MonoBehaviour
     public float jumpStrength = 1f;
     public float speed = 6.0f;
 
+    [SerializeField] private Vector3 overworldRotation;
+
     private CharacterController charCon;
     private Vector2 velociraptor;
+    private Transform trans;
 
     // Start is called before the first frame update
     void Start()
     {
         charCon = GetComponent<CharacterController>();
+        trans = transform;
+
+        if (overworld)
+        {
+            trans.Rotate(overworldRotation);
+        }
     }
 
     // Update is called once per frame
@@ -38,7 +47,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (!overworld)
+        {
+            trans.LookAt(Input.GetAxis("Horizontal") * Vector2.right + (Vector2)trans.position);
             velociraptor.y += gravity * Time.deltaTime;
+        }
+        else
+        {
+            if (velociraptor.magnitude > 0.001f)
+                trans.LookAt(velociraptor + (Vector2)trans.position, Vector3.back);
+        }
 
         charCon.Move(velociraptor * Time.deltaTime);
     }
