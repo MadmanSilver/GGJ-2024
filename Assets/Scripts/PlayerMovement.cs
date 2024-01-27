@@ -21,11 +21,6 @@ public class PlayerMovement : MonoBehaviour
     {
         charCon = GetComponent<CharacterController>();
         trans = transform;
-
-        if (overworld)
-        {
-            trans.Rotate(overworldRotation);
-        }
     }
 
     // Update is called once per frame

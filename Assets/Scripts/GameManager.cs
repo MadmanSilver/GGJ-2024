@@ -13,4 +13,14 @@ public class GameManager : Singleton<GameManager>
     {
         DontDestroyOnLoad(this);
     }
+
+    public bool HasAll()
+    {
+        return funnyBone && sunnySideUpEgg && lightheartedWind;
+    }
+
+    public bool HasNone()
+    {
+        return !funnyBone && !sunnySideUpEgg && !lightheartedWind;
+    }
 }
