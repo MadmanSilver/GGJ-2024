@@ -8,8 +8,8 @@ public class Home : MonoBehaviour
     [SerializeField] private GameObject storyIncompletePanel;
     [SerializeField] private GameObject storyCompletePanel;
 
-    private void Start() {
-        if (GameManager.Instance.HasNone())
+    public void NewGame(int lastScene) {
+        if (GameManager.Instance.HasNone() && lastScene == 0)
         {
             storyStartPanel.SetActive(true);
         }

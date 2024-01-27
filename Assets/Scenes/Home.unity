@@ -608,6 +608,66 @@ PrefabInstance:
       propertyPath: spawnPoints.Array.data[2].y
       value: -15.61
       objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6935980591358119971}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6935980591358119971}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NewGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: NewGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Home, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Home, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

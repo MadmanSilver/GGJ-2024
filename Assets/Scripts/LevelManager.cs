@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
     public List<Vector2> spawnPoints;
+    public UnityEvent<int> OnLevelInit;
 
     [SerializeField] private Transform playerTransform;
     [SerializeField] private CharacterController playerController;
@@ -26,5 +28,6 @@ public class LevelManager : MonoBehaviour
         playerController.enabled = false;
         playerTransform.position = spawnPoints[lastScene];
         playerController.enabled = true;
+        OnLevelInit?.Invoke(lastScene);
     }
 }
