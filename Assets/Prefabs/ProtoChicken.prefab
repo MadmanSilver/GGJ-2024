@@ -47,8 +47,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 10
+  m_Acceleration: 100
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -150,8 +150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minDist: 5
   runDistance: 7
-  wanderCooldown: 5
+  wanderCooldown: 2
   wanderDistance: 2
+  panicked: 1
   target: {fileID: 0}
   plane: {fileID: 0}
 --- !u!64 &695210602022345936

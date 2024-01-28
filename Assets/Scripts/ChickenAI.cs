@@ -10,6 +10,7 @@ public class ChickenAI : MonoBehaviour
     public float runDistance = 3f;
     public float wanderCooldown = 2f;
     public float wanderDistance = 1f;
+    public bool panicked = true;
 
     [SerializeField] private Transform target;
     [SerializeField] private Transform plane;
@@ -28,11 +29,11 @@ public class ChickenAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (navAgent.remainingDistance > navAgent.stoppingDistance)
-            return;
-        
         Vector3 diff = trans.position - target.position;
         Vector3 finalDestination = trans.position;
+
+        if (navAgent.remainingDistance > navAgent.stoppingDistance && panicked)
+            return;
 
         if (diff.magnitude <= minDist)
         {
@@ -54,10 +55,12 @@ public class ChickenAI : MonoBehaviour
             }
 
             finalDestination = idealDestination;
+            panicked = true;
         }
         else
         {
             wanderTimer += Time.deltaTime;
+            panicked = false;
 
             if (wanderTimer < wanderCooldown)
                 return;
