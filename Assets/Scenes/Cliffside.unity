@@ -600,6 +600,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 2534962415638968120, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4420024570326628754, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
       propertyPath: m_SortingOrder
@@ -608,7 +613,7 @@ PrefabInstance:
     - target: {fileID: 6293488633028038077, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
       propertyPath: m_text
-      value: Back to Map
+      value: Next Area
       objectReference: {fileID: 0}
     - target: {fileID: 6935980591212733567, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
@@ -707,7 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb2609615c7d5a45a39201c1ec15079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneIndex: 2
+  sceneIndex: 3
 --- !u!1 &245718908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,7 +1374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf1ee0da3ac768d4d9e5cd078478e759, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1748,7 +1753,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 601e47e5e6654ed48b51e142d3569245, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2703,7 +2708,7 @@ PrefabInstance:
     - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
@@ -2712,12 +2717,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 818541895}
     - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 223059798}
+    - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
@@ -2732,12 +2752,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: FunnyBone, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
         type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 762373201590552432, guid: 68a627de9ef5e33479f770f6052d84ac,
+        type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1291557001389436280, guid: 68a627de9ef5e33479f770f6052d84ac,
@@ -2931,7 +2971,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b09b9b3c584507340a70cf6bcd7f2f60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3204,7 +3244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 601e47e5e6654ed48b51e142d3569245, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3844,7 +3884,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: d27f030a5991d8b47be07860be122150, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3932,7 +3972,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: cf1ee0da3ac768d4d9e5cd078478e759, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4401,7 +4441,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 47b0a527cffa85442a4f2f62afd0a306, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4958,12 +4998,12 @@ PrefabInstance:
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: spawnPoints.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: spawnPoints.Array.data[0].y
-      value: -34
+      value: -36.65
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
@@ -4973,7 +5013,7 @@ PrefabInstance:
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: spawnPoints.Array.data[1].y
-      value: 0
+      value: -36.65
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
@@ -4983,7 +5023,7 @@ PrefabInstance:
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: spawnPoints.Array.data[2].y
-      value: -34
+      value: -36.65
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}

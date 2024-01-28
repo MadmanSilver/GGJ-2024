@@ -576,7 +576,7 @@ PrefabInstance:
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: spawnPoints.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
@@ -591,12 +591,12 @@ PrefabInstance:
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: spawnPoints.Array.data[1].x
-      value: 0
+      value: 24.54
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: spawnPoints.Array.data[1].y
-      value: 0
+      value: 6.88
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
@@ -610,12 +610,57 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
+      propertyPath: spawnPoints.Array.data[3].x
+      value: -30.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[3].y
+      value: -15.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[4].x
+      value: -30.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[4].y
+      value: -15.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[5].x
+      value: -30.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[5].y
+      value: -15.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[6].x
+      value: -30.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: spawnPoints.Array.data[6].y
+      value: -15.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
       propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
+        type: 3}
+      propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
@@ -646,7 +691,7 @@ PrefabInstance:
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
       propertyPath: OnLevelInit.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: NewGame
+      value: NoTurningBack
       objectReference: {fileID: 0}
     - target: {fileID: 7278523199471628475, guid: 09c5b6d7aebc28a4782c87c0129445b1,
         type: 3}
@@ -1485,7 +1530,7 @@ PrefabInstance:
     - target: {fileID: 7869222070321071748, guid: 0a4119ac784f0ec4cb5267b994e701fe,
         type: 3}
       propertyPath: m_text
-      value: I can't go back now... Not without all three ingredients!
+      value: I can't go back now... Not without all four ingredients!
       objectReference: {fileID: 0}
     - target: {fileID: 7869222070321071748, guid: 0a4119ac784f0ec4cb5267b994e701fe,
         type: 3}
@@ -2373,6 +2418,7 @@ MonoBehaviour:
   storyStartPanel: {fileID: 7985566793756715316}
   storyIncompletePanel: {fileID: 1926807202}
   storyCompletePanel: {fileID: 2061406106}
+  exit: {fileID: 2105487962}
 --- !u!1001 &7985566793756715315
 PrefabInstance:
   m_ObjectHideFlags: 0

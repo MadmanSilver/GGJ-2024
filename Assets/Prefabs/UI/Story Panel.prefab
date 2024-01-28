@@ -286,7 +286,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61.8
+  m_fontSize: 48.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -448,6 +448,7 @@ MonoBehaviour:
   - {fileID: 7869222070321071748}
   nextButton: {fileID: 7396729028400468835}
   previousButton: {fileID: 284787410240871882}
+  playerMovement: {fileID: 0}
 --- !u!82 &7368943311358190290
 AudioSource:
   m_ObjectHideFlags: 0
@@ -989,7 +990,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: da137e5f4bf445446a7d66c1ee2c89c9, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

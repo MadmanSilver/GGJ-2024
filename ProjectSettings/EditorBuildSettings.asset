@@ -11,18 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 10252028f7b04e04bbdcc747056f17a9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Overworld Map.unity
     guid: dbad8b6acdcf4c54a8e28941a83660b7
   - enabled: 1
     path: Assets/Scenes/Cliffside.unity
     guid: 15aafd6d773811a4f8e4560499d757e9
   - enabled: 1
-    path: Assets/Scenes/Windy Hill.unity
-    guid: e124a5304f4f1164ba5f9029446dfe57
-  - enabled: 1
     path: Assets/Scenes/Chicken Farm.unity
     guid: 8f494c9d8c20f72499c51b7f2b8d84db
+  - enabled: 1
+    path: Assets/Scenes/Windy Hill.unity
+    guid: e124a5304f4f1164ba5f9029446dfe57
   - enabled: 0
     path: Assets/Scenes/Prototyping/Testing Ground 1.unity
     guid: 99c9720ab356a0642a771bea13969a05
