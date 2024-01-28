@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Home : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Home : MonoBehaviour
         {
             storyStartPanel.SetActive(true);
         }
+
+        DestroyMusic();
     }
 
     public void DoorInteract()
@@ -33,6 +36,17 @@ public class Home : MonoBehaviour
         if (lastScene != 0)
         {
             exit.SetActive(false);
+        }
+    }
+
+    private void DestroyMusic()
+    {
+        foreach (AudioSource source in FindObjectsOfType<AudioSource>())
+        {
+            if (source.name.Contains("Music"))
+            {
+                SceneManager.MoveGameObjectToScene(source.gameObject, gameObject.scene);
+            }
         }
     }
 }
