@@ -413,10 +413,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8336393200069565724}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 4371133768044849458}
+        m_TargetAssemblyTypeName: EscapeMenu, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 8254853007475749861}
   hoverClip: {fileID: 8300000, guid: 6ba8a595b0bc8984fb306360f675affe, type: 3}
-  clickClip: {fileID: 8300000, guid: ce3bf99fbde6cc24d8a99193b029269a, type: 3}
+  clickClip: {fileID: 8300000, guid: cc7c6bee791abaf4ebaf6e7cfa47f53d, type: 3}
 --- !u!1 &2083471798831048473
 GameObject:
   m_ObjectHideFlags: 0

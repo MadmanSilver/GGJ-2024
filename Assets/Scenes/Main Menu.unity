@@ -2147,6 +2147,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1303658819}
+    - target: {fileID: 398594608137786550, guid: 88a2b2d68beadb848874424745ed4bbb,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 527084550119816776, guid: 88a2b2d68beadb848874424745ed4bbb,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2252,6 +2257,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 944565044369980142, guid: 88a2b2d68beadb848874424745ed4bbb,
+        type: 3}
+      propertyPath: clickClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce3bf99fbde6cc24d8a99193b029269a, type: 3}
     - target: {fileID: 944565044369980142, guid: 88a2b2d68beadb848874424745ed4bbb,
         type: 3}
       propertyPath: audioSource
@@ -2361,6 +2371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Settings Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264170576628588415, guid: 88a2b2d68beadb848874424745ed4bbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4268095982013012117, guid: 88a2b2d68beadb848874424745ed4bbb,
         type: 3}

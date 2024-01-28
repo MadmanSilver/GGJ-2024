@@ -9,8 +9,10 @@ public class StoryPanel : MonoBehaviour
     [SerializeField] private GameObject nextButton;
     [SerializeField] private GameObject previousButton;
     [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private AudioClip openSound;
 
     private int index = 0;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,9 @@ public class StoryPanel : MonoBehaviour
 
         nextButton.SetActive(pages.Length > 1);
         previousButton.SetActive(false);
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(openSound);
     }
 
     public void ToggleMovement(bool val)

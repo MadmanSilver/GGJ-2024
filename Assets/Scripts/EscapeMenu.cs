@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class EscapeMenu : MonoBehaviour
@@ -17,7 +18,8 @@ public class EscapeMenu : MonoBehaviour
     private void Update() {
         if (Input.GetKeyDown("escape"))
         {
-            canvas.enabled = true;
+            canvas.enabled = !canvas.enabled;
+            EventSystem.current.SetSelectedGameObject(null);
         }
     }
 
@@ -26,5 +28,11 @@ public class EscapeMenu : MonoBehaviour
         SceneManager.MoveGameObjectToScene(FindAnyObjectByType<GameManager>().gameObject, SceneManager.GetActiveScene());
         SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
         SceneManager.LoadScene(0);
+    }
+
+    public void Close()
+    {
+        canvas.enabled = false;
+        EventSystem.current.SetSelectedGameObject(null);
     }
 }

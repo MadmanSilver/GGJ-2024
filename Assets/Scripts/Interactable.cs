@@ -9,6 +9,14 @@ public class Interactible : MonoBehaviour
     public UnityEvent onInteract;
 
     [SerializeField] private GameObject prompt;
+    [SerializeField] private AudioClip openSound;
+    [SerializeField] private AudioClip closeSound;
+
+    private AudioSource source;
+
+    private void Start() {
+        source = GetComponent<AudioSource>();
+    }
 
     private void Update() {
         if (Input.GetButtonDown("Interact") && !autoInteract && prompt.activeSelf)
@@ -24,7 +32,10 @@ public class Interactible : MonoBehaviour
         if (autoInteract)
             onInteract?.Invoke();
         else
+        {
             prompt.SetActive(true);
+            source.PlayOneShot(openSound);
+        }
     }
 
     private void OnTriggerExit(Collider other) {
@@ -32,6 +43,9 @@ public class Interactible : MonoBehaviour
             return;
 
         if (!autoInteract)
+        {
             prompt.SetActive(false);
+            source.PlayOneShot(closeSound);
+        }
     }
 }
