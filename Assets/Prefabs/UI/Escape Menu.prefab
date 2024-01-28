@@ -2039,6 +2039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resolution
       objectReference: {fileID: 0}
+    - target: {fileID: 8344538248812310927, guid: c9efa5e8159a2474f851cbf37ca08614,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8591197837004909763, guid: c9efa5e8159a2474f851cbf37ca08614,
         type: 3}
       propertyPath: m_text
@@ -2547,6 +2552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Full Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344538248812310927, guid: c9efa5e8159a2474f851cbf37ca08614,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8591197837004909763, guid: c9efa5e8159a2474f851cbf37ca08614,
         type: 3}
@@ -3332,7 +3342,7 @@ PrefabInstance:
     - target: {fileID: 4278980061780321393, guid: 3292180ef45b63149a3993ac2d3bd37d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -530
+      value: -525
       objectReference: {fileID: 0}
     - target: {fileID: 4278980061780321393, guid: 3292180ef45b63149a3993ac2d3bd37d,
         type: 3}
@@ -4097,7 +4107,7 @@ PrefabInstance:
     - target: {fileID: 4278980061780321393, guid: 3292180ef45b63149a3993ac2d3bd37d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -430
+      value: -425
       objectReference: {fileID: 0}
     - target: {fileID: 4278980061780321393, guid: 3292180ef45b63149a3993ac2d3bd37d,
         type: 3}
