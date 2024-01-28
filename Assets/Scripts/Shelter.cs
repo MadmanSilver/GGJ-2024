@@ -9,13 +9,13 @@ public class Shelter : MonoBehaviour
         if (other.tag != "Player")
             return;
 
-        other.GetComponent<WindSimulator>().sheltered = true;
+        other.GetComponent<WindSimulator>().sheltered++;
     }
 
     private void OnTriggerExit(Collider other) {
         if (other.tag != "Player")
             return;
 
-        other.GetComponent<WindSimulator>().sheltered = false;
+        other.GetComponent<WindSimulator>().sheltered--;
     }
 }

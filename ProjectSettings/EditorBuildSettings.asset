@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 5a7f8b3d575f9ab41bd0e0a35f38f10e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 10252028f7b04e04bbdcc747056f17a9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Overworld Map.unity
     guid: dbad8b6acdcf4c54a8e28941a83660b7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Cliffside.unity
     guid: 15aafd6d773811a4f8e4560499d757e9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Windy Hill.unity
     guid: e124a5304f4f1164ba5f9029446dfe57
   - enabled: 1

@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class WindSimulator : MonoBehaviour
 {
-    public bool sheltered = false;
+    public int sheltered = 0;
     public float windForce = 2f;
     public float duration = 5f;
     public float cooldown = 2f;
@@ -39,14 +39,9 @@ public class WindSimulator : MonoBehaviour
             blowing = true;
         }
 
-        if (sheltered || !blowing)
+        if (sheltered > 0 || !blowing)
             return;
 
         charCon.Move(Vector2.down * windForce * Time.deltaTime);
-    }
-
-    public void Sheltered(bool val)
-    {
-        sheltered = val;
     }
 }
