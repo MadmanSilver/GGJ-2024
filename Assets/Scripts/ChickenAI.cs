@@ -14,16 +14,21 @@ public class ChickenAI : MonoBehaviour
 
     [SerializeField] private Transform target;
     [SerializeField] private Transform plane;
+    [SerializeField] private List<AudioClip> chickenSounds;
+    [SerializeField] private List<Sprite> sprites;
 
     private NavMeshAgent navAgent;
     private Transform trans;
     private float wanderTimer = 0f;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
         trans = transform;
+        audioSource = GetComponent<AudioSource>();
+        GetComponentInChildren<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Count)];
     }
 
     // Update is called once per frame
@@ -56,6 +61,8 @@ public class ChickenAI : MonoBehaviour
 
             finalDestination = idealDestination;
             panicked = true;
+            if (Random.value <= 0.33)
+                audioSource.PlayOneShot(chickenSounds[Random.Range(0, chickenSounds.Count)]);
         }
         else
         {
