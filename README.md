@@ -22,6 +22,7 @@ y_benjamin - Game Designer (https://y-benjamin.itch.io/)
 SpicyBeefu - 3D Artist (https://twitter.com/beefuwu)  
 Vorundor - Environment Artist (https://www.instagram.com/vorundor/)  
 ZM_Art - Concept Artist (https://www.zachmorganart.com)  
+RedPandaPanic - Chicken Sprites (https://redpandapanic.carrd.co/)
 Nicholas Perez - Musician (https://www.instagram.com/5050audio/)  
 Flat_6 - Sound Designer (https://www.traviswattigney.com/)  
 Nina - UI/UX Designer
